@@ -1,0 +1,115 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  background-color: #ffeeee;
+  color: #293264;
+}
+/* Start page */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 560px;
+  width: 560px;
+  background-color: #f5f7fb;
+  margin: 50px auto;
+}
+.Start-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Start-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+.Start-description {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.Start-button {
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4d5b9e;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.Start-button:hover {
+  background-color: #ffeeee;
+  /* color: #a0acf4; */
+  transition: 0.5s;
+}
+.Start-button:active {
+  box-shadow: inset 0px 0px 17px -1px rgba(0, 0, 0, 0.89);
+}
+
+/* Quizz page */
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0 0 80px;
+}
+.question-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.Question-container {
+  margin-bottom: 10px;
+}
+.Question {
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 380px;
+}
+.Answer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.Answer {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 0.794239px solid #4d5b9e;
+  box-sizing: border-box;
+  width: 70px;
+  max-width: 200px;
+  height: 20px;
+}
+.check-button {
+  width: 120px;
+  height: 35px;
+  border-style: none;
+  border-radius: 10px;
+  background-color: #4d5b9e;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.check-button:hover {
+  background-color: #ffeeee;
+  transition: 0.5s;
+}
+.check-button:active {
+  box-shadow: inset 0px 0px 17px -1px rgba(0, 0, 0, 0.89);
+}
+.reveal-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
