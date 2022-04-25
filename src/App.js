@@ -33,7 +33,7 @@ function App() {
   } else {
     return (
       <div>
-        {localStorage.getItem("welcomepage") === "true" ? (
+        {startPage ? (
           <Startpage handleclick={welcome} />
         ) : (
           <Quizzpage allPair={allPair} />
