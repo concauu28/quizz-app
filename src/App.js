@@ -9,6 +9,7 @@ function App() {
     setstartPage(false);
     localStorage.setItem("welcomepage", "false");
   }
+
   useEffect(function () {
     fetch("https://opentdb.com/api.php?amount=5&type=multiple")
       .then((res) => res.json())

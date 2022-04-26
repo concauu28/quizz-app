@@ -59,6 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 40px 0 0 80px;
+  align-items: center;
 }
 .question-container {
   display: flex;
@@ -89,6 +90,7 @@ body {
   width: 70px;
   max-width: 200px;
   height: 20px;
+  overflow: hidden;
 }
 .check-button {
   width: 120px;

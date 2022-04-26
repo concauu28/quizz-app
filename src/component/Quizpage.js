@@ -22,7 +22,6 @@ export default function Quizzpage(props) {
       chosenanswer={[0]}
     />
   ));
-
   function check_correct_answer() {
     setcurrent("correction");
   }

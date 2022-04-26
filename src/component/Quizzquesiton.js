@@ -3,6 +3,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 export default function Quizzquestion(props) {
   const [listofAnswer, setlistofAnswer] = useState(props.list);
+
   function Held(id) {
     setlistofAnswer((prev) =>
       prev.map((ele) => {
@@ -17,18 +18,7 @@ export default function Quizzquestion(props) {
     }
   }
 
-  let elebutton = listofAnswer.map((element) => (
-    <button
-      style={{ backgroundColor: element.isHeld ? "#D6DBF5" : "white" }}
-      className="Answer"
-      onClick={() => {
-        Held(element.id);
-      }}
-      key={nanoid()}
-    >
-      {element.answer}
-    </button>
-  ));
+  let elebutton;
 
   if (props.check == false) {
     elebutton = listofAnswer.map((element) => (
